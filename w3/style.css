@@ -1,0 +1,21 @@
+body {
+background-color: bisque;
+font-size: 16px;
+color: blueviolet;
+font-family: 'Times New Roman', Times, serif;
+}
+ul {
+    list-style-type: none;
+}
+
+.n1 {
+color:red
+}
+
+.n2 {
+    color:green
+}
+
+.n3 {
+    color:blue
+}
