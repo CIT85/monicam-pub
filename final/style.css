@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+    background-color: bisque;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+.inline-block-element {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+footer {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    text-align: center;
+    padding: 20px;
+    background-color: #493;
+}
+
+footer p {
+    margin: 30px 30px;
+}
+
+h1, h2, h3, h4 {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 20px;
+    letter-spacing: 1.5px;
+}
+
+h1 { 
+    font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+h2 { 
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h3 { 
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+h4 { 
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+p {
+    white-space: normal;
+    display: block;
+    line-height: 1.6em;
+    font-size: 16px;
+    margin: 10px 10px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+nav {
+    position: sticky;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a { 
+  text-decoration: none;
+  padding: 10px 30px; 
+  background-color: rgb(17, 151, 129);
+  color: white;
+  border-radius: 35%;
+  border: 2px #000;
+}
+
+nav ul li a:hover {
+    background-color: rgb(196, 96, 4);
+}
+
+nav ul li a:visited {
+    background-color: rgb(214, 18, 221);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #049;
+    box-sizing: border-box;
+}
+
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+th {
+    background-color: rgb(31, 133, 99);
+    color: white;
+    font-size: 1.2rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: azure;
+}
+
+.color-container {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   margin-bottom: 15px;
+}
+
+.color-swatch {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: bisque;
+    color: white;
+}
+
+.site-header h1 {
+    margin: 10px;
+}
+
+.fact-of-the-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+}
+
+.table-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 25px;
+    background-color: whitesmoke;
+}
+
+.table-grid {
+    display: grid;
+    justify-content: center;
+}
+
+.table-section table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+section, article, figure {
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        background-color: greenyellow;
+        border-radius: 6px;
+        width: 90%;
+        margin: 0 auto 1rem auto;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px 0;
+        border-radius: 10px;
+        font-size: 1.1rem;
+    }
+
+    main {
+        display: block;
+    }
+
+    main > section, main > article {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section, article {
+        padding: 10px;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    body {
+        font-size: 14px;
+    }
+    .site-header .header-top {
+         flex-direction: column;
+         align-items: flex-start;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: red;
+        width: auto;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        width: auto;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 35%;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    main > section, main > article {
+        flex: 1 1 45%;
+        padding: 15px;
+        min-width: 300px;
+    }
+    figure img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding-left: 0;
+        margin-bottom: 1.5rem;
+        background: blueviolet;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 10px 30px;
+        font-size: 1rem;
+        border-radius: 35%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    main > section, main > article {
+        width: auto;
+        padding: 20px
+    }
+    figure img {
+        max-width: 300px;
+    }
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
+    }
+        main > section, main > article {
+        padding: 25px
+    }
+    figure img {
+        max-width: 350px;
+    }
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1201px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+        main > section, main > article {
+        padding: 30px
+    }
+    figure img {
+        max-width: 400px;
+    }
+    body {
+        font-size: 20px;
+    }
+}
