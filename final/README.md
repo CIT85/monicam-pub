@@ -77,3 +77,6 @@ Full links
 All images have correct alt atrribles
 Semantic HTML elements were used to provide correct and proper structure to everything
 I used meaningful text for links
+
+## Hero Image Design
+I picked a famous historian Herodotus, also known as the Father of History. This is because of his personal efforts of reaccounting history and saving important journal entries during his travels.
